@@ -9,12 +9,14 @@ public class Main {
         int N = sc.nextInt();
         for( int i = 0; i < N; i++ ){
            for( int j = 0; j < N * 2; j++ ){
+               // 짝수일 경우 - 홀수가 공백
                if( i % 2 == 0 ){
-                   if( j % 2 == 0 ){
+                   if (j % 2 == 0) {
                        System.out.print("*");
                    } else {
                        System.out.print(" ");
                    }
+               // 홀수일 경우 - 짝수가 공백
                } else {
                    if( j % 2 == 0 ){
                        System.out.print(" ");
@@ -22,9 +24,8 @@ public class Main {
                        System.out.print("*");
                    }
                }
-
            }
-            System.out.println("");
+            System.out.println();
         }
     }
 
