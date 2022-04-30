@@ -13,4 +13,6 @@ public class Main {
         int result = str.equals(reversedStr) ? 1 : 0;
         System.out.println(result);
     }
+
+
 }
