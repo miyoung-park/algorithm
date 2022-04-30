@@ -12,5 +12,7 @@ public class Main {
         String reversedStr = sb.reverse().toString();
         int result = str.equals(reversedStr) ? 1 : 0;
         System.out.println(result);
+
+        
     }
 }
