@@ -1,29 +1,23 @@
 package 백준_2750;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
-        int[] numArr = new int[N];
+        List<Integer> list = new ArrayList<>();
         int temp = 0;
 
         for( int i = 0; i < N; i++ ){
-            numArr[i] = sc.nextInt();
+            list.add( sc.nextInt() );
         }
 
-        for( int j = 0; j < N; j++ ){
-           for( int z = 0; z < N; z++ ){
-               if( numArr[j] < numArr[z] ){
-                   temp = numArr[j];
-                   numArr[j] = numArr[z];
-                   numArr[z] = temp;
-               }
-           }
-        }
+        list.sort(null);
 
-        for( int num : numArr ){
+        for( int num : list ){
             System.out.println(num);
         }
     }
