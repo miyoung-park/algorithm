@@ -1,4 +1,4 @@
-package 백준_14914;
+package 백준_14913;
 
 import java.util.Scanner;
 
@@ -11,18 +11,20 @@ public class Main {
         int d = sc.nextInt();
         int k = sc.nextInt();
         int num = 1;
-        int result = 0;
+        String result = "";
 
-        while( a + (num - 1) * d <= k ){
-            if( a + (num - 1) * d == k ) {
-                result += num;
+        while( true ){
+
+            if(  a + ( ( num - 1 ) * d ) == k ){
+                result = String.valueOf(num);
+
+                break;
+            }
+            if( ( a+( (num-1)*d ) > k && a < k)  || ( a+( (num-1)*d ) < k && a > k )){
+                result = "X";
                 break;
             }
             num++;
-        }
-        if( result == 0 ){
-            System.out.println("X");
-            return;
         }
         System.out.println(result);
     }
