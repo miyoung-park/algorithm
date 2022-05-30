@@ -15,7 +15,6 @@ public class Main {
             num = num < 10 ? num * 11 : num;
             String a = String.valueOf(num).split("")[0];
             String b = String.valueOf(num).split("")[1];
-
         }
 
     }
