@@ -1,4 +1,4 @@
-package 백준_14723;
+package 백준_14489;
 
 public class Main {
 
