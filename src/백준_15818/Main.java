@@ -7,11 +7,11 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int cycle = sc.nextInt();
         int M = sc.nextInt();
-        long result = 1;
+        double result = 1;
         for( int i=0; i<cycle; i++ ){
-            int num = sc.nextInt();
-            result *= num % M;
+           int num = sc.nextInt();
+            System.out.println( );
         }
-        System.out.println( result % M );
+
     }
 }
