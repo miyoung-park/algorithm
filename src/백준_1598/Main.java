@@ -14,6 +14,6 @@ public class Main {
                 numberArr[i][1] -= 1;
             }
         }
-        System.out.println(Math.abs(numberArr[0][1] - numberArr[1][1]) + Math.abs(numberArr[0][0] - numberArr[1][0]));
+        System.out.println( Math.abs(numberArr[0][0] - numberArr[1][0]) + Math.abs(numberArr[0][1] - numberArr[1][1]) );
     }
 }

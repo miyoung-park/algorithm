@@ -6,12 +6,14 @@ public class Main {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int cycle = sc.nextInt();
-        int M = sc.nextInt();
-        double result = 1;
+        double M = sc.nextInt();
+        long result = 1;
         for( int i=0; i<cycle; i++ ){
-           int num = sc.nextInt();
-            System.out.println( );
+           double num = sc.nextDouble() / M;
+            System.out.println(num);
+           result *= num;
+           System.out.println( result );
         }
-
+        System.out.println( result );
     }
 }
