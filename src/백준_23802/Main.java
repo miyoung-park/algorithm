@@ -8,11 +8,19 @@ public class Main {
         int N = sc.nextInt();
         int D = 5;
         for( int i=0; i<N*D; i++ ){
-            for( int j=0; j<N; j++ ){
-                System.out.print("@");
+            if( i < N ){
+                for( int z=0; z<N; z++){
+                    for( int j=0; j<D; j++ ){
+                        System.out.print("@");
+                    }
+                }
+                System.out.println();
             }
-            for( int k=0; k<N; k++ ){
-                System.out.println("@");
+            if( i >= N ){
+                for( int k=0; k<N; k++){
+                    System.out.print("@");
+                }
+                System.out.println();
             }
         }
     }
