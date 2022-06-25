@@ -10,7 +10,7 @@ public class Main {
         int idx = 0;
         for( int i=0; i<c; i++ ){
             int n = sc.nextInt();
-            sum += (n==0) ? (idx = 0) : (n+idx++);
+            sum += (n==0) ? idx = 0 : n+idx++;
         }
         System.out.println(sum);
     }
