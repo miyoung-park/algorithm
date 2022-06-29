@@ -5,8 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-<<<<<<< HEAD
-=======
+
         int c = sc.nextInt();
         int sum = 0;
         int idx = 0;
@@ -15,6 +14,5 @@ public class Main {
             sum += (n==0) ? idx = 0 : n+idx++;
         }
         System.out.println(sum);
->>>>>>> 607624ddbd1fcd1a822ca4896362a30f6607bf62
     }
 }
