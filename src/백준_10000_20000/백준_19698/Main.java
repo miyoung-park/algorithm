@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        int cycle = sc.nextInt();
-        for( int i = 0; i<cycle; i++ ){
-            double dollar = sc.nextDouble();
-            String result = String.format("%.2f" , dollar * 0.8);
-            System.out.println( "$" + result );
-        }
+        int N = sc.nextInt();
+        int W = sc.nextInt();
+        int H = sc.nextInt();
+        int L = sc.nextInt();
+        int cow = Math.min((W / L) * (H / L), N);
+        System.out.println(cow);
     }
 }
