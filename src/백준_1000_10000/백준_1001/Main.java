@@ -1,12 +1,14 @@
-package 백준_1000_10000.백준_1855;
+package 백준_1000_10000.백준_1001;
 
 import java.util.Scanner;
 
 public class Main {
+
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        int sep = sc.nextInt();
-        String[] str = sc.next().split("");
+        int A = sc.nextInt();
+        int B = sc.nextInt();
 
+        System.out.println(A - B);
     }
 }
