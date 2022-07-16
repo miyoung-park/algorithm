@@ -5,18 +5,24 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        int N = sc.nextInt();
-        int K = sc.nextInt();
-        int count = 0;
-        for( int z=0; z<=N; z++ ){
-            for( int i=0; i<60; i++ ){
-                for( int j=0; j<60; j++ ){
-                    if( z/10 == K || z%10 == K || i/10 == K || i%10 == K || j/10 == K || j%10 == K ){
-                        count++;
-                    }
+        int c = sc.nextInt();
+        for( int k=0; k<c; k++ ){
+            int n = sc.nextInt();
+            int sum = 0;
+            String p = "";
+            for( int i=1; i<n; i++ ){
+                if( n%i == 0 ){
+                    sum += i;
                 }
             }
+            if( sum == n ){
+                p = "Perfect";
+            } else if( sum < n ){
+                p = "Deficient";
+            } else {
+                p = "Abundant";
+            }
+            System.out.println(p);
         }
-        System.out.println(count);
     }
 }

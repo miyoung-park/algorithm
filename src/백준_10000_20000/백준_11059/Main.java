@@ -7,8 +7,6 @@ public class Main {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
         String[] S = sc.next().split("");
-        for( int i=0; i<S.length; i++ ){
-
-        }
+        int idx = 0;
     }
 }
