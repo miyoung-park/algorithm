@@ -5,9 +5,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        for( int i=0; i<5; i++ ){
-            
+        StringBuffer sb = new StringBuffer();
+        for( int i=1; i<=5; i++ ){
+            String str = sc.nextLine().toUpperCase();
+            if( str.contains("FBI") ) sb.append(i +" ");
         }
-
+        System.out.println(sb.length() > 0 ? sb : "HE GOT AWAY!");
     }
 }
